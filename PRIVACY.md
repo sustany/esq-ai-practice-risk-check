@@ -1,8 +1,8 @@
-# Privacy notice: ALCBar AI Practice Risk Check
+# Privacy notice: ESQ AI Practice Risk Check
 
-Effective October 9, 2026
+Effective October 22, 2026
 
-This notice covers the ALCBar AI Practice Risk Check plugin and its server at https://mcp.alcbar.com/mcp.
+This notice covers the ESQ AI Practice Risk Check plugin and its server at https://mcp.esqcopilot.com/mcp.
 
 ## What the server receives
 
@@ -19,12 +19,12 @@ The server runs on a virtual private server hosted by Hostinger. Like any intern
 
 ## Your AI assistant
 
-Your conversation with Claude, ChatGPT or another assistant is handled by that company under its own privacy policy. ALCBar does not receive your conversation.
+Your conversation with Claude, ChatGPT or another assistant is handled by that company under its own privacy policy. ESQ CoPilot does not receive your conversation.
 
 ## The full report link
 
-The result includes a link to https://alcbar.com/ai-practice-risk-score.html. If you open it, the ALCBar.com website privacy policy applies.
+The result includes a link to https://esqcopilot.com/ai-practice-risk-score.html. If you open it, the ESQ CoPilot website privacy policy (https://esqcopilot.com/privacy.html) applies.
 
 ## Contact
 
-Questions: chris@alcbar.com
+Questions: notices@esqcopilot.com
