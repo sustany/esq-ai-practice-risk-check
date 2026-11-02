@@ -1,5 +1,9 @@
 {
   "mcpServers": {
+    "esqharness": {
+      "type": "http",
+      "url": "https://vbhhoynfhumkjdtznrda.supabase.co/functions/v1/esq-mcp?t=${user_config.firm_code}"
+    },
     "esq-risk-check": {
       "type": "http",
       "url": "https://mcp.esqcopilot.com/mcp"

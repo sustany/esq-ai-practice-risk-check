@@ -1,8 +1,25 @@
-# Privacy notice: ESQ AI Practice Risk Check
+# Privacy notice: EsqHarness for Claude
 
-Effective October 22, 2026
+Effective November 2, 2026
 
-This notice covers the ESQ AI Practice Risk Check plugin and its server at https://mcp.esqcopilot.com/mcp.
+This notice covers the EsqHarness plugin for Claude and its two servers: EsqHarness (https://vbhhoynfhumkjdtznrda.supabase.co/functions/v1/esq-mcp) and the ESQ AI Practice Risk Check (https://mcp.esqcopilot.com/mcp). Both are operated by Decentralized Publishing LLC. The ESQ CoPilot privacy policy (https://esqcopilot.com/privacy.html) also applies.
+
+## EsqHarness: what it receives
+
+- The draft text you ask Claude to check for citations and quotations.
+- A court name and judge name, and for a disclosure draft the details you give (attorney name, document title, AI tool used, how it was used).
+- Your firm code, if you entered one in the plugin settings.
+
+## EsqHarness: what happens to it
+
+- Citations and short phrases from quotations are sent to CourtListener (https://www.courtlistener.com, run by Free Law Project) to look them up.
+- Without a firm code, nothing is saved: the result goes back to Claude and the text is discarded.
+- With a firm code, each check result (the citations and quotations checked and their statuses, plus the label you gave) is saved to that firm's EsqHarness record, so the firm can show its monthly record. The full draft text is not saved. To ask about or delete a firm's records, email notices@esqcopilot.com.
+- The server runs on Supabase. Nothing is sold, and nothing is used for advertising.
+
+Remove client names and other identifying details the task does not need before asking for a check.
+
+# ESQ AI Practice Risk Check
 
 ## What the server receives
 

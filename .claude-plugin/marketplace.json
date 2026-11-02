@@ -1,0 +1,20 @@
+{
+  "name": "esqharness",
+  "owner": {
+    "name": "Decentralized Publishing LLC",
+    "email": "notices@esqcopilot.com"
+  },
+  "metadata": {
+    "description": "EsqHarness: AI safeguards for U.S. lawyers inside Claude, from ESQ CoPilot."
+  },
+  "plugins": [
+    {
+      "name": "esqharness",
+      "source": "./",
+      "description": "AI safeguards for U.S. lawyers: citation and quotation checks, court AI rules and disclosures, firm AI rules, and the AI Practice Risk Check. Not legal advice.",
+      "version": "1.0.0",
+      "category": "productivity",
+      "homepage": "https://esqcopilot.com/esqharness.html"
+    }
+  ]
+}
