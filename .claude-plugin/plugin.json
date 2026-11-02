@@ -1,27 +1,37 @@
 {
-  "name": "esq-ai-practice-risk-check",
-  "displayName": "ESQ AI Practice Risk Check",
-  "version": "1.2.0",
-  "description": "A 12-question check for U.S. lawyers and law firms on how safely they use generative AI. Scores ethics, confidentiality, verification, supervision, vendor risk, cybersecurity and competitive readiness out of 100, with one next step for each weak area. Answers are scored on the spot and not stored.",
+  "name": "esqharness",
+  "displayName": "EsqHarness for Claude",
+  "version": "1.0.0",
+  "description": "AI safeguards for U.S. lawyers inside Claude: checks case citations and quotations against the CourtListener case-law database, finds a court's AI rules and drafts the AI-use disclosure, loads the firm's own AI rules, and runs the ESQ AI Practice Risk Check. The attorney stays responsible for the final work. Not legal advice.",
   "author": {
     "name": "Decentralized Publishing LLC",
     "email": "notices@esqcopilot.com",
     "url": "https://esqcopilot.com"
   },
-  "homepage": "https://esqcopilot.com/ai-practice-risk-score.html",
+  "homepage": "https://esqcopilot.com/esqharness.html",
   "repository": "https://github.com/sustany/esq-ai-practice-risk-check",
+  "license": "MIT",
+  "keywords": [
+    "lawyer",
+    "law firm",
+    "citation check",
+    "court AI rules",
+    "AI disclosure",
+    "legal ethics",
+    "ABA Formal Opinion 512"
+  ],
+  "userConfig": {
+    "firm_code": {
+      "type": "string",
+      "title": "EsqHarness firm code (optional)",
+      "description": "The 36-character code after t= at the end of your EsqHarness connector link, from your EsqHarness welcome email. With it, your firm's AI rules load and each check is added to your firm's monthly record. Leave it empty to use the checks without a firm record.",
+      "sensitive": true,
+      "required": false
+    }
+  },
+  "icon": "./.claude-plugin/icon.png",
   "documentationUrl": "https://github.com/sustany/esq-ai-practice-risk-check#readme",
   "supportUrl": "https://esqcopilot.com/contact.html",
-  "license": "MIT",
-  "icon": "./.claude-plugin/icon.png",
   "privacyPolicyUrl": "https://esqcopilot.com/privacy.html",
-  "keywords": [
-    "legal",
-    "lawyers",
-    "law firm",
-    "ethics",
-    "generative AI",
-    "ABA Formal Opinion 512",
-    "risk"
-  ]
+  "termsOfServiceUrl": "https://esqcopilot.com/terms.html"
 }

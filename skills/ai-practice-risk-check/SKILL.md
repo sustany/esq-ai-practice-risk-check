@@ -5,7 +5,7 @@ description: Run the ESQ AI Practice Risk Check for a U.S. lawyer or law firm. U
 
 # ESQ AI Practice Risk Check
 
-This skill uses the ESQ Risk Check connector (`esq-risk-check`). It has three tools:
+This skill uses the ESQ Risk Check connector (`esq-risk-check`), part of the EsqHarness plugin. It has three tools:
 `get_risk_check_questions`, `score_ai_practice_risk` and `explain_ai_ethics_duties`.
 
 ## Run the check
