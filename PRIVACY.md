@@ -1,8 +1,8 @@
 # Privacy notice: EsqHarness for Claude
 
-Effective November 2, 2026
+Effective November 3, 2026
 
-This notice covers the EsqHarness plugin for Claude and its two servers: EsqHarness (https://vbhhoynfhumkjdtznrda.supabase.co/functions/v1/esq-mcp) and the ESQ AI Practice Risk Check (https://mcp.esqcopilot.com/mcp). Both are operated by Decentralized Publishing LLC. The ESQ CoPilot privacy policy (https://esqcopilot.com/privacy.html) also applies.
+This notice covers the EsqHarness plugin for Claude and its two servers: EsqHarness (https://mcp.esqcopilot.com/harness) and the ESQ AI Practice Risk Check (https://mcp.esqcopilot.com/mcp). Both are operated by Decentralized Publishing LLC. The ESQ CoPilot privacy policy (https://esqcopilot.com/privacy.html) also applies.
 
 ## EsqHarness: what it receives
 
@@ -15,7 +15,7 @@ This notice covers the EsqHarness plugin for Claude and its two servers: EsqHarn
 - Citations and short phrases from quotations are sent to CourtListener (https://www.courtlistener.com, run by Free Law Project) to look them up.
 - Without a firm code, nothing is saved: the result goes back to Claude and the text is discarded.
 - With a firm code, each check result (the citations and quotations checked and their statuses, plus the label you gave) is saved to that firm's EsqHarness record, so the firm can show its monthly record. The full draft text is not saved. To ask about or delete a firm's records, email notices@esqcopilot.com.
-- The server runs on Supabase. Nothing is sold, and nothing is used for advertising.
+- Nothing is sold, and nothing is used for advertising.
 
 Remove client names and other identifying details the task does not need before asking for a check.
 
