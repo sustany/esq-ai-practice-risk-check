@@ -1,7 +1,7 @@
 {
   "name": "esqharness",
   "displayName": "EsqHarness for Claude",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI safeguards for U.S. lawyers inside Claude: checks case citations and quotations against the CourtListener case-law database, finds a court's AI rules and drafts the AI-use disclosure, loads the firm's own AI rules, and runs the ESQ AI Practice Risk Check. The attorney stays responsible for the final work. Not legal advice.",
   "author": {
     "name": "Decentralized Publishing LLC",

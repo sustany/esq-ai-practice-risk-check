@@ -38,7 +38,7 @@ Older versions:
 
 ## What this plugin sends and runs
 Nothing runs on your computer. The plugin connects Claude to two remote servers operated by Decentralized Publishing LLC:
-- `https://vbhhoynfhumkjdtznrda.supabase.co/functions/v1/esq-mcp` (EsqHarness). It receives the draft text you ask it to check, or the court and judge name. It sends the citations and short quotation phrases to CourtListener (https://www.courtlistener.com) to look them up. With a firm code, the check result (citations, statuses, quotations) is saved to that firm's record; without one, nothing is saved.
+- `https://mcp.esqcopilot.com/harness` (EsqHarness). It receives the draft text you ask it to check, or the court and judge name. It sends the citations and short quotation phrases to CourtListener (https://www.courtlistener.com) to look them up. With a firm code, the check result (citations, statuses, quotations) is saved to that firm's record; without one, nothing is saved.
 - `https://mcp.esqcopilot.com/mcp` (Risk Check). It receives only the 12 letter answers or the ethics topic, and stores nothing.
 
 Claude never sends your chat history, files or memory. Remove client names and other identifying details the task does not need before asking for a check.

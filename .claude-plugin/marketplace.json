@@ -12,7 +12,7 @@
       "name": "esqharness",
       "source": "./",
       "description": "AI safeguards for U.S. lawyers: citation and quotation checks, court AI rules and disclosures, firm AI rules, and the AI Practice Risk Check. Not legal advice.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "productivity",
       "homepage": "https://esqcopilot.com/esqharness.html"
     }
