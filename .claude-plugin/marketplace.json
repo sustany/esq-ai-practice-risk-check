@@ -1,20 +1,20 @@
 {
-  "name": "esqharness",
+  "name": "esq-copilot",
   "owner": {
-    "name": "Decentralized Publishing LLC",
+    "name": "ESQ CoPilot (Digital Crossings Inc)",
     "email": "notices@esqcopilot.com"
   },
   "metadata": {
-    "description": "EsqHarness: AI safeguards for U.S. lawyers inside Claude, from ESQ CoPilot."
+    "description": "The ESQ CoPilot AI Practice Risk Check for U.S. lawyers, with EsqHarness citation checks and court AI rules."
   },
   "plugins": [
     {
-      "name": "esqharness",
+      "name": "esq-ai-practice-risk-check",
       "source": "./",
-      "description": "AI safeguards for U.S. lawyers: citation and quotation checks, court AI rules and disclosures, firm AI rules, and the AI Practice Risk Check. Not legal advice.",
-      "version": "1.0.1",
+      "description": "A free AI practice risk check for U.S. lawyers, plus citation and quotation checks, court AI rules and AI-use disclosure drafts from EsqHarness. Not legal advice.",
+      "version": "1.3.0",
       "category": "productivity",
-      "homepage": "https://esqcopilot.com/esqharness.html"
+      "homepage": "https://esqcopilot.com/ai-practice-risk-score.html"
     }
   ]
 }
