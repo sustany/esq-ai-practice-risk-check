@@ -1,7 +1,7 @@
 {
   "name": "esq-ai-practice-risk-check",
   "displayName": "ESQ CoPilot AI Practice Risk Check",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "A free 12-question check for U.S. lawyers and law firms on how safely they use generative AI. Scores ethics, confidentiality, verification, supervision, vendor risk, cybersecurity and competitive readiness out of 100, with one next step for each weak area. Includes a free check of case citations and quotations against the CourtListener case-law database, court AI rules and AI-use disclosure drafts, from EsqHarness by ESQ CoPilot. Risk check answers are scored on the spot and not stored. Not legal advice.",
   "author": {
     "name": "ESQ CoPilot (Digital Crossings Inc)",
@@ -21,15 +21,6 @@
     "citation check",
     "court AI rules"
   ],
-  "userConfig": {
-    "firm_code": {
-      "type": "string",
-      "title": "EsqHarness firm code (optional)",
-      "description": "The 36-character code after t= at the end of your EsqHarness connector link, from your EsqHarness welcome email. With it, your firm's AI rules load and each check is added to your firm's monthly record. Leave it empty to use the checks without a firm record.",
-      "sensitive": true,
-      "required": false
-    }
-  },
   "icon": "./.claude-plugin/icon.png",
   "documentationUrl": "https://github.com/sustany/esq-ai-practice-risk-check#readme",
   "supportUrl": "https://esqcopilot.com/contact.html",
