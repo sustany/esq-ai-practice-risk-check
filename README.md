@@ -29,7 +29,7 @@ Older versions:
 /plugin install esq-ai-practice-risk-check@esq-copilot
 ```
 
-**Firm code (optional):** firms with an EsqHarness account can enter the 36-character code from the end of their EsqHarness connector link (after `t=`) when the plugin asks. Claude stores it as a protected setting. With it, the firm's own AI rules load and every citation check is added to the firm's monthly record. Without it, the checks work and nothing is recorded. EsqHarness accounts: https://esqcopilot.com/esqharness.html
+**Firms with an EsqHarness account:** the plugin itself sends no firm code, so through the plugin the checks work and nothing is recorded. To load the firm's own AI rules and add each check to the firm's monthly record, add the personal connector link from the EsqHarness welcome email as a custom connector. EsqHarness accounts: https://esqcopilot.com/esqharness.html
 
 ## Examples
 - "Run the AI practice risk check for my firm."
@@ -40,7 +40,7 @@ Older versions:
 
 ## What this plugin sends and runs
 Nothing runs on your computer. The plugin connects Claude to two remote servers operated by ESQ CoPilot (Digital Crossings Inc):
-- `https://mcp.esqcopilot.com/harness` (EsqHarness). It receives the draft text you ask it to check, or the court and judge name. It sends the citations and short quotation phrases to CourtListener (https://www.courtlistener.com) to look them up. With a firm code, the check result (citations, statuses, quotations) is saved to that firm's record; without one, nothing is saved.
+- `https://mcp.esqcopilot.com/harness` (EsqHarness). It receives the draft text you ask it to check, or the court and judge name. It sends the citations and short quotation phrases to CourtListener (https://www.courtlistener.com) to look them up. Through this plugin nothing is saved.
 - `https://mcp.esqcopilot.com/mcp` (Risk Check). It receives only the 12 letter answers or the ethics topic, and stores nothing.
 
 Claude never sends your chat history, files or memory. Remove client names and other identifying details the task does not need before asking for a check.

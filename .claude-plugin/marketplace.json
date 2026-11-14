@@ -12,7 +12,7 @@
       "name": "esq-ai-practice-risk-check",
       "source": "./",
       "description": "A free AI practice risk check for U.S. lawyers, plus citation and quotation checks, court AI rules and AI-use disclosure drafts from EsqHarness. Not legal advice.",
-      "version": "1.3.0",
+      "version": "1.3.1",
       "category": "productivity",
       "homepage": "https://esqcopilot.com/ai-practice-risk-score.html"
     }

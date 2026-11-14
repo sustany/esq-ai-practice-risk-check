@@ -2,7 +2,7 @@
   "mcpServers": {
     "esqharness": {
       "type": "http",
-      "url": "https://mcp.esqcopilot.com/harness?t=${user_config.firm_code}"
+      "url": "https://mcp.esqcopilot.com/harness"
     },
     "esq-risk-check": {
       "type": "http",

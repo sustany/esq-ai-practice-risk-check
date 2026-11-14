@@ -8,13 +8,12 @@ This notice covers the ESQ CoPilot AI Practice Risk Check plugin for Claude and 
 
 - The draft text you ask Claude to check for citations and quotations.
 - A court name and judge name, and for a disclosure draft the details you give (attorney name, document title, AI tool used, how it was used).
-- Your firm code, if you entered one in the plugin settings.
 
 ## EsqHarness: what happens to it
 
 - Citations and short phrases from quotations are sent to CourtListener (https://www.courtlistener.com, run by Free Law Project) to look them up.
-- Without a firm code, nothing is saved: the result goes back to Claude and the text is discarded.
-- With a firm code, each check result (the citations and quotations checked and their statuses, plus the label you gave) is saved to that firm's EsqHarness record, so the firm can show its monthly record. The full draft text is not saved. To ask about or delete a firm's records, email notices@esqcopilot.com.
+- Through this plugin, nothing is saved: the result goes back to Claude and the text is discarded. The plugin sends no firm code.
+- Firms with an EsqHarness account can instead connect Claude with the personal connector link from their welcome email. With that link, each check result (the citations and quotations checked and their statuses, plus the label you gave) is saved to that firm's EsqHarness record, so the firm can show its monthly record. The full draft text is not saved. To ask about or delete a firm's records, email notices@esqcopilot.com.
 - Nothing is sold, and nothing is used for advertising.
 
 Remove client names and other identifying details the task does not need before asking for a check.
