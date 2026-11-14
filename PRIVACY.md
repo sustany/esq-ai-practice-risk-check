@@ -1,8 +1,8 @@
-# Privacy notice: EsqHarness for Claude
+# Privacy notice: ESQ CoPilot AI Practice Risk Check for Claude
 
-Effective November 3, 2026
+Effective November 14, 2026
 
-This notice covers the EsqHarness plugin for Claude and its two servers: EsqHarness (https://mcp.esqcopilot.com/harness) and the ESQ AI Practice Risk Check (https://mcp.esqcopilot.com/mcp). Both are operated by Decentralized Publishing LLC. The ESQ CoPilot privacy policy (https://esqcopilot.com/privacy.html) also applies.
+This notice covers the ESQ CoPilot AI Practice Risk Check plugin for Claude and its two servers: EsqHarness (https://mcp.esqcopilot.com/harness) and the ESQ AI Practice Risk Check (https://mcp.esqcopilot.com/mcp). Both are operated by ESQ CoPilot (Digital Crossings Inc). The ESQ CoPilot privacy policy (https://esqcopilot.com/privacy.html) also applies.
 
 ## EsqHarness: what it receives
 
@@ -38,9 +38,9 @@ The server runs on a virtual private server hosted by Hostinger. Like any intern
 
 Your conversation with Claude, ChatGPT or another assistant is handled by that company under its own privacy policy. ESQ CoPilot does not receive your conversation.
 
-## The full report link
+## Links in the result
 
-The result includes a link to https://esqcopilot.com/ai-practice-risk-score.html. If you open it, the ESQ CoPilot website privacy policy (https://esqcopilot.com/privacy.html) applies.
+The result includes a link to https://esqcopilot.com/ai-practice-risk-score.html, and the optional "What you can do next" section links to https://esqcopilot.com/esqharness.html and https://directory.esqcopilot.com/. The links carry labels (utm_source=claude) that tell ESQ CoPilot the visit came from this plugin; they carry no answers, scores or personal details. If you open a link, the ESQ CoPilot website privacy policy (https://esqcopilot.com/privacy.html) applies.
 
 ## Contact
 
