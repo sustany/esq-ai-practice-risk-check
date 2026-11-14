@@ -4,7 +4,7 @@ A free AI practice risk check for U.S. lawyers and law firms, inside Claude, wit
 
 Claude asks 12 multiple-choice questions (about 4 minutes) and scores how safely the firm uses generative AI, out of 100, in seven areas, with one next step for each weak area. The same plugin checks the parts of AI-assisted legal work that get lawyers sanctioned: case citations that do not exist, quotations a court never wrote, and court rules on AI use that a filing ignores. These tools check and remind; the attorney remains responsible for the final work. This is not legal advice.
 
-After the score, Claude shows a short, optional "What you can do next" section: check a draft's citations right away in the same chat (free, no account), the EsqHarness page for firms (a paid subscription; price and trial terms are on the page), and the free ESQ CoPilot directory profile a listed lawyer can claim.
+After the score, Claude shows a short, optional "What you can do next" section: check a draft's citations right away in the same chat (free, no account), a factual pointer to the EsqHarness page for firms (paid software; the plugin never links to checkout or asks anyone to buy), and the free ESQ CoPilot directory profile a listed lawyer can claim.
 
 ## What it does
 - **AI Practice Risk Check** (`get_risk_check_questions`, `score_ai_practice_risk`, `explain_ai_ethics_duties`): 12 questions, a score out of 100 in seven areas, one next step for each weak area, and a short summary of the ethics duties in ABA Formal Opinion 512 (July 29, 2024).

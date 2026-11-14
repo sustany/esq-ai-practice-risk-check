@@ -40,7 +40,7 @@ Your conversation with Claude, ChatGPT or another assistant is handled by that c
 
 ## Links in the result
 
-The result includes a link to https://esqcopilot.com/ai-practice-risk-score.html, and the optional "What you can do next" section links to https://esqcopilot.com/esqharness-try.html and https://directory.esqcopilot.com/. The links carry labels (utm_source=claude) that tell ESQ CoPilot the visit came from this plugin; they carry no answers, scores or personal details. If you open a link, the ESQ CoPilot website privacy policy (https://esqcopilot.com/privacy.html) applies.
+The result includes a link to https://esqcopilot.com/ai-practice-risk-score.html, and the optional "What you can do next" section links to https://esqcopilot.com/esqharness.html and https://directory.esqcopilot.com/. The links carry labels (utm_source=claude) that tell ESQ CoPilot the visit came from this plugin; they carry no answers, scores or personal details. If you open a link, the ESQ CoPilot website privacy policy (https://esqcopilot.com/privacy.html) applies.
 
 ## Contact
 
