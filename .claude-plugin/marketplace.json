@@ -1,20 +1,25 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "esq-copilot",
+  "description": "The ESQ CoPilot AI Practice Risk Check for U.S. lawyers, with citation and quotation checks and court AI rules.",
   "owner": {
     "name": "ESQ CoPilot (Digital Crossings Inc)",
     "email": "notices@esqcopilot.com"
   },
-  "metadata": {
-    "description": "The ESQ CoPilot AI Practice Risk Check for U.S. lawyers, with EsqHarness citation checks and court AI rules."
-  },
   "plugins": [
     {
       "name": "esq-ai-practice-risk-check",
+      "displayName": "ESQ CoPilot AI Practice Risk Check",
       "source": "./",
-      "description": "A free AI practice risk check for U.S. lawyers, plus citation and quotation checks, court AI rules and AI-use disclosure drafts from EsqHarness. Not legal advice.",
-      "version": "1.3.1",
+      "description": "Say \"Run my AI risk check\": 12 quick multiple-choice questions, about 2 minutes, then a score out of 100 in seven areas and your top 3 gaps with a next step for each. Free follow-ups in the same chat: a firm-specific AI use policy draft, an ABA Formal Opinion 512 checklist, and a check of case citations and quotations against the CourtListener case-law database. Every output is a draft for attorney review. Not legal advice.",
+      "author": {
+        "name": "ESQ CoPilot (Digital Crossings Inc)",
+        "email": "notices@esqcopilot.com",
+        "url": "https://esqcopilot.com"
+      },
       "category": "productivity",
-      "homepage": "https://esqcopilot.com/ai-practice-risk-score.html"
+      "homepage": "https://esqcopilot.com/ai-practice-risk-score.html",
+      "version": "1.5.0"
     }
   ]
 }

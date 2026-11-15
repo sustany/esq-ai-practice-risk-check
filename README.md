@@ -1,52 +1,45 @@
 # ESQ CoPilot AI Practice Risk Check
 
-A free AI practice risk check for U.S. lawyers and law firms, inside Claude, with the EsqHarness citation and court-rule tools. From ESQ CoPilot.
+A free AI practice risk check for U.S. lawyers and law firms, inside Claude, with citation, quotation and court-rule checks. From ESQ CoPilot. Built to the same layout and conventions as Anthropic's open-source Claude for Legal plugins (skills, a practice-profile template, shared guardrails, and a reviewer note on every legal draft).
 
-Claude asks 12 multiple-choice questions (about 4 minutes) and scores how safely the firm uses generative AI, out of 100, in seven areas, with one next step for each weak area. The same plugin checks the parts of AI-assisted legal work that get lawyers sanctioned: case citations that do not exist, quotations a court never wrote, and court rules on AI use that a filing ignores. These tools check and remind; the attorney remains responsible for the final work. This is not legal advice.
+Every output is a draft for attorney review. This is not legal advice.
 
-After the score, Claude shows a short, optional "What you can do next" section: check a draft's citations right away in the same chat (free, no account), a factual pointer to the EsqHarness page for firms (paid software; the plugin never links to checkout or asks anyone to buy), and the free ESQ CoPilot directory profile a listed lawyer can claim.
+## Skills
 
-## What it does
-- **AI Practice Risk Check** (`get_risk_check_questions`, `score_ai_practice_risk`, `explain_ai_ethics_duties`): 12 questions, a score out of 100 in seven areas, one next step for each weak area, and a short summary of the ethics duties in ABA Formal Opinion 512 (July 29, 2024).
-- **Citation and quotation check** (`check_citations`): every case citation in a draft is looked up in the CourtListener case-law database; quotations from opinions are searched in the opinion text. Anything not found is flagged for a check by hand. "Found" means the case exists, not that it says what the draft claims. Statutes and rules are not checked.
-- **Court AI rules** (`get_court_ai_rules`): court rules, ethics guidance and judges' standing orders on AI for a U.S. court, each with its source and a label saying whether a person checked it against the source. Coverage is listed in every answer; a court with nothing on file says so.
-- **AI-use disclosure** (`draft_ai_disclosure`): a draft declaration based on the court's rules, for the attorney to review and adapt.
-- **Firm AI rules** (`get_firm_rules`): the firm's EsqHarness AI policy, loaded at the start of legal work.
-
-Four short skills tell Claude when to use each tool: `check-before-filing`, `court-ai-rules`, `firm-ai-rules` and `ai-practice-risk-check`.
+| Skill | What it does |
+|---|---|
+| `/esq-ai-practice-risk-check:ai-practice-risk-check` | Say "Run my AI risk check" (or `/esq-ai-practice-risk-check:run-my-ai-risk-check`). 12 quick questions (about 2 minutes), a score out of 100 in seven areas, your top 3 gaps with a next step for each, and summaries of the ethics duties in ABA Formal Opinion 512 (July 29, 2024). Answers are not stored. The result ends with one "Save your report" link to esqcopilot.com. |
+| `/esq-ai-practice-risk-check:ai-use-policy-draft` | A firm-specific AI use policy draft built from the risk check answers and the Opinion 512 duty summaries, for attorney review. |
+| `/esq-ai-practice-risk-check:aba-512-checklist` | An ABA Formal Opinion 512 checklist, each item marked done, partly or open from the risk check answers. |
+| `/esq-ai-practice-risk-check:check-before-filing` | Looks up every case citation in a draft in the CourtListener case-law database and searches each quotation in the opinion text. "Found" means the case exists, not that it says what the draft claims. Statutes and rules are not checked. |
+| `/esq-ai-practice-risk-check:court-ai-rules` | Court rules, ethics guidance and judges' standing orders on AI for a U.S. court, each with its source and a label saying how it was checked, plus a draft AI-use disclosure for the attorney to adapt. |
+| `/esq-ai-practice-risk-check:firm-ai-rules` | Loads the firm's own AI use policy, for firms that connect with their personal EsqHarness link. |
+| `/esq-ai-practice-risk-check:cold-start-interview` | Optional setup: practice setting, licensed states and usual courts, used only as defaults. |
 
 ## Install
-Claude Code (version 2.1.275 or later):
-
-```
-/plugin install esq-ai-practice-risk-check --marketplace sustany/esq-ai-practice-risk-check
-```
-
-Older versions:
 
 ```
 /plugin marketplace add sustany/esq-ai-practice-risk-check
 /plugin install esq-ai-practice-risk-check@esq-copilot
 ```
 
-**Firms with an EsqHarness account:** the plugin itself sends no firm code, so through the plugin the checks work and nothing is recorded. To load the firm's own AI rules and add each check to the firm's monthly record, add the personal connector link from the EsqHarness welcome email as a custom connector. EsqHarness accounts: https://esqcopilot.com/esqharness.html
+## Practice profile
 
-## Examples
-- "Run the AI practice risk check for my firm."
-- "Check the citations and quotations in this brief before I file it." (paste the draft)
-- "What are the AI rules for a filing in the Central District of California before Judge Wright?"
-- "Draft the AI-use declaration for my opposition in Orange County Superior Court."
-- "What does ABA Formal Opinion 512 say about confidentiality?"
+Setup is optional. If you run `/esq-ai-practice-risk-check:cold-start-interview`, your answers are saved on your own computer at `~/.claude/plugins/config/esq-copilot/esq-ai-practice-risk-check/CLAUDE.md`. If you already use Anthropic's Claude for Legal plugins, the interview offers the practice setting and jurisdictions from your existing `company-profile.md` and never changes that file.
 
 ## What this plugin sends and runs
+
 Nothing runs on your computer. The plugin connects Claude to two remote servers operated by ESQ CoPilot (Digital Crossings Inc):
-- `https://mcp.esqcopilot.com/harness` (EsqHarness). It receives the draft text you ask it to check, or the court and judge name. It sends the citations and short quotation phrases to CourtListener (https://www.courtlistener.com) to look them up. Through this plugin nothing is saved.
-- `https://mcp.esqcopilot.com/mcp` (Risk Check). It receives only the 12 letter answers or the ethics topic, and stores nothing.
+
+- `https://mcp.esqcopilot.com/mcp` (Risk Check): receives only the 12 letter answers or the ethics topic, and stores nothing.
+- `https://mcp.esqcopilot.com/harness` (EsqHarness): receives the draft text you ask it to check, or the court and judge name. It sends the citations and short quotation phrases to CourtListener (https://www.courtlistener.com) to look them up. Through this plugin nothing is saved.
 
 Claude never sends your chat history, files or memory. Remove client names and other identifying details the task does not need before asking for a check.
 
 ## Privacy and terms
+
 Plugin privacy notice: [PRIVACY.md](PRIVACY.md). Privacy policy: https://esqcopilot.com/privacy.html. Terms: https://esqcopilot.com/terms.html.
 
 ## Support
+
 https://esqcopilot.com/contact.html, notices@esqcopilot.com. ESQ CoPilot is operated by Digital Crossings Inc, 92 Corporate Park, Ste C #1083, Irvine, CA 92606.
