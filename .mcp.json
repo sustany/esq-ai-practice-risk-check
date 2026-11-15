@@ -12,9 +12,5 @@
       "title": "EsqHarness",
       "description": "Checks case citations and opinion quotations against the CourtListener case-law database, lists court AI rules and standing orders with their sources, and drafts AI-use disclosures for attorney review."
     }
-  },
-  "recommendedCategories": [
-    "legal-research",
-    "case-law"
-  ]
+  }
 }

@@ -1,7 +1,7 @@
 {
   "name": "esq-ai-practice-risk-check",
   "displayName": "ESQ CoPilot AI Practice Risk Check",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Say \"Run my AI risk check\": 12 quick multiple-choice questions, about 2 minutes, then a score out of 100 in seven areas and your top 3 gaps with a next step for each. Free follow-ups in the same chat: a firm-specific AI use policy draft, an ABA Formal Opinion 512 checklist, and a check of case citations and quotations against the CourtListener case-law database. Every output is a draft for attorney review. Not legal advice.",
   "author": {
     "name": "ESQ CoPilot (Digital Crossings Inc)",
