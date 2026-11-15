@@ -1,12 +1,20 @@
 {
   "mcpServers": {
-    "esqharness": {
-      "type": "http",
-      "url": "https://mcp.esqcopilot.com/harness"
-    },
     "esq-risk-check": {
       "type": "http",
-      "url": "https://mcp.esqcopilot.com/mcp"
+      "url": "https://mcp.esqcopilot.com/mcp",
+      "title": "ESQ AI Practice Risk Check",
+      "description": "Twelve multiple-choice questions on a firm's generative AI use, scored out of 100 in seven areas, plus short summaries of the ethics duties in ABA Formal Opinion 512. Answers are scored on the spot and not stored."
+    },
+    "esqharness": {
+      "type": "http",
+      "url": "https://mcp.esqcopilot.com/harness",
+      "title": "EsqHarness",
+      "description": "Checks case citations and opinion quotations against the CourtListener case-law database, lists court AI rules and standing orders with their sources, and drafts AI-use disclosures for attorney review."
     }
-  }
+  },
+  "recommendedCategories": [
+    "legal-research",
+    "case-law"
+  ]
 }
