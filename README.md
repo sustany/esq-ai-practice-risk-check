@@ -8,24 +8,27 @@ Every output is a draft for attorney review. This is not legal advice.
 
 | Skill | What it does |
 |---|---|
-| `/esq-ai-practice-risk-check:ai-practice-risk-check` | Say "Run my AI risk check" (or `/esq-ai-practice-risk-check:run-my-ai-risk-check`). 12 quick questions (about 2 minutes), a score out of 100 in seven areas, your top 3 gaps with a next step for each, and summaries of the ethics duties in ABA Formal Opinion 512 (July 29, 2024). Answers are not stored. The result ends with one "Save your report" link to esqcopilot.com. |
-| `/esq-ai-practice-risk-check:ai-use-policy-draft` | A firm-specific AI use policy draft built from the risk check answers and the Opinion 512 duty summaries, for attorney review. |
-| `/esq-ai-practice-risk-check:aba-512-checklist` | An ABA Formal Opinion 512 checklist, each item marked done, partly or open from the risk check answers. |
-| `/esq-ai-practice-risk-check:check-before-filing` | Looks up every case citation in a draft in the CourtListener case-law database and searches each quotation in the opinion text. "Found" means the case exists, not that it says what the draft claims. Statutes and rules are not checked. |
-| `/esq-ai-practice-risk-check:court-ai-rules` | Court rules, ethics guidance and judges' standing orders on AI for a U.S. court, each with its source and a label saying how it was checked, plus a draft AI-use disclosure for the attorney to adapt. |
-| `/esq-ai-practice-risk-check:firm-ai-rules` | Loads the firm's own AI use policy, for firms that connect with their personal EsqHarness link. |
-| `/esq-ai-practice-risk-check:cold-start-interview` | Optional setup: practice setting, licensed states and usual courts, used only as defaults. |
+| `ai-practice-risk-check` | Say "Run my AI risk check" (or the `run-my-ai-risk-check` command). 12 quick questions (about 2 minutes), a score out of 100 in seven areas, your top 3 gaps with a next step for each, and summaries of the ethics duties in ABA Formal Opinion 512 (July 29, 2024). Answers are not stored. The result ends with one "Save your report" link to esqcopilot.com. |
+| `ai-use-policy-draft` | A firm-specific AI use policy draft built from the risk check answers and the Opinion 512 duty summaries, for attorney review. |
+| `aba-512-checklist` | An ABA Formal Opinion 512 checklist, each item marked done, partly or open from the risk check answers. |
+| `check-before-filing` | Looks up every case citation in a draft in the CourtListener case-law database and searches each quotation in the opinion text. "Found" means the case exists, not that it says what the draft claims. Statutes and rules are not checked. |
+| `court-ai-rules` | Court rules, ethics guidance and judges' standing orders on AI for a U.S. court, each with its source and a label saying how it was checked, plus a draft AI-use disclosure for the attorney to adapt. |
+| `firm-ai-rules` | Loads the firm's own AI use policy, for firms that connect with their personal EsqHarness link. |
+| `cold-start-interview` | Optional setup: practice setting, licensed states and usual courts, used only as defaults. |
 
 ## Install
 
+Install "ESQ CoPilot AI Practice Risk Check" from the Claude plugin directory, or in Claude Code run:
+
 ```
 /plugin marketplace add sustany/esq-ai-practice-risk-check
-/plugin install esq-ai-practice-risk-check@esq-copilot
 ```
+
+then install it from the esq-copilot marketplace.
 
 ## Practice profile
 
-Setup is optional. If you run `/esq-ai-practice-risk-check:cold-start-interview`, your answers are saved on your own computer at `~/.claude/plugins/config/esq-copilot/esq-ai-practice-risk-check/CLAUDE.md`. If you already use Anthropic's Claude for Legal plugins, the interview offers the practice setting and jurisdictions from your existing `company-profile.md` and never changes that file.
+Setup is optional. If you run the `cold-start-interview` skill, your answers are saved on your own computer at `~/.claude/plugins/config/esq-copilot/esq-ai-practice-risk-check/CLAUDE.md`. If you already use Anthropic's Claude for Legal plugins, the interview offers the practice setting and jurisdictions from your existing `company-profile.md` and never changes that file.
 
 ## What this plugin sends and runs
 

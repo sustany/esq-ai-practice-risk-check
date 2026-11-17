@@ -15,7 +15,7 @@ Uses `explain_ai_ethics_duties` from the ESQ Risk Check connector (`esq-risk-che
 
 ## Inputs
 
-1. The 12 risk check answers from this conversation, if the check was run. If not, offer to run `/esq-ai-practice-risk-check:ai-practice-risk-check` first, or draft a general version with every firm-specific choice left as a bracketed placeholder.
+1. The 12 risk check answers from this conversation, if the check was run. If not, offer to run the `ai-practice-risk-check` skill first, or draft a general version with every firm-specific choice left as a bracketed placeholder.
 2. Ask in one message, all optional: firm name, states where the firm's lawyers are licensed, firm size, and which AI tools the firm uses or allows. Read them from `~/.claude/plugins/config/esq-copilot/esq-ai-practice-risk-check/CLAUDE.md` if it exists, and let the user confirm. Never ask for client names or matter details.
 3. Call `explain_ai_ethics_duties` with `all`.
 

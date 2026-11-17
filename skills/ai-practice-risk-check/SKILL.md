@@ -37,15 +37,15 @@ Tell the user in one sentence to turn on the connector: click **+** in the messa
    - the disclaimer, word for word.
    Do not add your own analysis, ranking or advice, and do not say how much any change will raise the score. Keep the result free of products and prices.
 5. Then add one short section headed **Free next steps in this chat**, with these three offers, one line each:
-   - "**Draft your firm's AI use policy**, built from your answers, for attorney review." (runs `/esq-ai-practice-risk-check:ai-use-policy-draft`)
-   - "**ABA Formal Opinion 512 checklist**, marked with what your answers show is done and still open." (runs `/esq-ai-practice-risk-check:aba-512-checklist`)
+   - "**Draft your firm's AI use policy**, built from your answers, for attorney review." (runs the `ai-use-policy-draft` skill)
+   - "**ABA Formal Opinion 512 checklist**, marked with what your answers show is done and still open." (runs the `aba-512-checklist` skill)
    - "**Check a draft's citations**: paste a brief, motion or memo and every case citation and quotation is looked up in the CourtListener case-law database. No account needed, nothing saved." If Verification is one of the top 3 gaps, put this offer first.
 6. End the reply with exactly one link, on its own line, and nothing after it:
 
    `**Save your report:** https://esqcopilot.com/save-report.html?a=ANSWERS&utm_source=claude&utm_medium=plugin&utm_campaign=risk-check`
 
    Replace `ANSWERS` with the 12 answer letters in question order, lower case, with no spaces or separators (for example `bcabcbacbbca`). The page rebuilds the same score from those letters. This link takes the place of the tool's `full_report` link; do not show both. Do not add any other link, product name, price or sales wording to the reply.
-7. If the user picks an offer, run that skill. If the user pastes a draft, follow `/esq-ai-practice-risk-check:check-before-filing`.
+7. If the user picks an offer, run that skill. If the user pastes a draft, follow the `check-before-filing` skill.
 
 ## Explain the ethics duties
 

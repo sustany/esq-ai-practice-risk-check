@@ -31,9 +31,9 @@ Uses `explain_ai_ethics_duties` from the ESQ Risk Check connector (`esq-risk-che
    | Approved-tools list | Q8 |
    | Written vendor questionnaire before adoption | Q9 |
 
-   Answer a = **Done**, b = **Partly**, c = **Open**. Rows with no question listed = **Not covered by the check**. If the check was not run, mark every row `[ ]` and offer to run `/esq-ai-practice-risk-check:ai-practice-risk-check`.
+   Answer a = **Done**, b = **Partly**, c = **Open**. Rows with no question listed = **Not covered by the check**. If the check was not run, mark every row `[ ]` and offer to run the `ai-practice-risk-check` skill.
 4. Below the tables, list the Open and Partly rows in one short list, each with the next step for that area from the check result if one was returned.
-5. End with: "ABA opinions are not binding. Your state's rules and guidance control." Offer `/esq-ai-practice-risk-check:ai-use-policy-draft` in one line.
+5. End with: "ABA opinions are not binding. Your state's rules and guidance control." Offer the `ai-use-policy-draft` skill in one line.
 
 ## Rules
 
